@@ -1,7 +1,9 @@
 #!/usr/bin/env ruby
+
 # file: timetoday.rb
 
 require 'date'
+require 'time'
 
 class TimeToday
 
@@ -13,6 +15,10 @@ class TimeToday
     day, mon, year = Time.now.to_a.values_at 3,4,5
     s, min, hr = any_time.to_a.values_at 0,1,2
     Time.new(year, mon, day, hr, min, s)  
+  end
+
+  def self.between(s1,s2)
+    rand Time.parse(s1)..Time.parse(s2)
   end
 
   def self.future()
