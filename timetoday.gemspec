@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
   s.name = 'timetoday'
-  s.version = '0.1.5'
+  s.version = '0.1.8'
   s.summary = 'timetoday'
   s.files = Dir['lib/**/*.rb']
   s.add_runtime_dependency('chronic_duration', '~> 0.1', '>=0.10.4')  
